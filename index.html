@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f0f4f8;
+    }
+    #status {
+      color: green;
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+    #exerciseBox {
+      width: 250px;
+      height: 120px;
+      background-color: #90ee90;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    button {
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="status">Ready to Workout!</h1>
+  <div id="exerciseBox">Jumping Jacks</div>
+
+  <button onclick="startWorkout()">Start Workout</button>
+  <button onclick="toggleExercise()">Toggle Exercise</button>
+  <button onclick="nextExercise()">Next Exercise</button>
+  <button onclick="resetWorkout()">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
